@@ -5,23 +5,29 @@
 }
 
 body {
-  margin: 60px auto;
-  max-width: 800px;
+  margin-top: 100px;
 }
 
 h1,
 h2,
 h3 {
-  text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 96px;
+  font-size: 45px;
+  text-align: center;
+}
+
+.name {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 56px;
 }
 
 h3 {
@@ -30,12 +36,8 @@ h3 {
 }
 
 p {
-  background: var(--secondary-color);
-  padding: 20px;
-  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
 }
 
 .navigation-links {
@@ -46,10 +48,6 @@ p {
 
 .navigation-links a {
   margin: 20px;
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
 }
 
 .primary-link {
@@ -71,26 +69,7 @@ p {
   border: 1px solid var(--primary-color);
 }
 
-/* 
-.contact-link {
-  background: var(--primary-color);
-  box-shadow: var(--box-shadow);
-  color: white;
-} */
-/* 
-.about-link {
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
-} */
-
-.homepage-link {
-  color: var(--primary-color);
-  text-align: center;
-  display: block;
-}
-
 .about-paragraphs {
-  display: flex;
   margin: 30px 0;
 }
 
@@ -108,6 +87,11 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+.about-me {
+  text-align: center;
+  font-size: 96px;
 }
 
 @media (max-width: 576px) {
