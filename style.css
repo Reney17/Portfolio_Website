@@ -5,29 +5,23 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 60px auto;
+  max-width: 800px;
 }
 
 h1,
 h2,
 h3 {
+  text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-size: 45px;
-  text-align: center;
-}
-
-.name {
-  font-size: 80px;
-  font-weight: bold;
-  text-align: center;
-  display: block;
+  font-size: 96px;
 }
 
 h2 {
-  font-size: 56px;
+  font-size: 48px;
 }
 
 h3 {
@@ -36,8 +30,12 @@ h3 {
 }
 
 p {
+  background: var(--secondary-color);
+  padding: 20px;
+  border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
+  text-align: center;
 }
 
 .navigation-links {
@@ -48,6 +46,10 @@ p {
 
 .navigation-links a {
   margin: 20px;
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .primary-link {
@@ -69,7 +71,26 @@ p {
   border: 1px solid var(--primary-color);
 }
 
+/* 
+.contact-link {
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+} */
+/* 
+.about-link {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+} */
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
 .about-paragraphs {
+  display: flex;
   margin: 30px 0;
 }
 
@@ -89,7 +110,23 @@ p {
   text-decoration: underline;
 }
 
-.about-me {
-  text-align: center;
-  font-size: 96px;
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .button-link {
+    text-align: center;
+    margin: 0 20px;
+  }
 }
